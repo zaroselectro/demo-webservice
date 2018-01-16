@@ -53,7 +53,7 @@
 					<imageName>zaroselectro/demo-mocroservice</imageName>
 					<baseImage>anapsix/alpine-java</baseImage>
 
-					<entryPoint>[ "java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
+					<entryPoint>[ "java", "-jar", "/${project.build.finalName}.jar", "--spring.config.location=/srv/conf/"]</entryPoint>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
