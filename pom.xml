@@ -50,7 +50,7 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>1.0.0</version>
 				<configuration>
-					<imageName>zaroselectro/demo-mocroservice</imageName>
+					<imageName>divaethm/demo-microservice</imageName>
 					<baseImage>anapsix/alpine-java</baseImage>
 
 					<entryPoint>[ "java", "-jar", "/${project.build.finalName}.jar", "--spring.config.location=/srv/conf/"]</entryPoint>

@@ -20,15 +20,6 @@ public class MainController {
         
     }
 
-
-    @GetMapping("/person-without-credentials")
-    public Person getPersonWithoutCredentials() {
-        final Person person = new Person();
-        person.setIdx(UUID.randomUUID().toString());
-        person.setEmail("person1@foobar.de");
-        return person;
-    }
-
     @GetMapping("/person-with-credentials")
     public Person getPersonWithCredentials() {
         final Person person = new Person();
